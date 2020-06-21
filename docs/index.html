@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+		<title>DIYRemote</title>
+		<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<h1>DIYRemote</h1>
+		
+		<div>Create your custom universal remote control with HTML</div>
+		
+		<h2>Getting Started</h2>
+		
+		<ol>
+		  <li><a href="http://irdb.tk/find/">Find Codes for Your Devices</a></li>
+		  <li><a href="manual.html">Read Manual</a></li>
+		</ol>
+
+		
+		<h3>Check Out Other Remote Designs</h3>
+		
+		<div id="remotes">
+		
+		</div>
+		
+		<script>
+		jQuery.get('remotes.xml', function(res) {
+			var ul = $('<ul></ul>');
+			$('remote', res).each(function() {
+				var li = $('<li class="remote-row"><a class="remote-link" href="remotes/'+$("name", this).text()+'/">'+$("name", this).text()+'</a> - <span class="remote-description">'+$('description', this).text()+'</span><br/><span class="remote-model">'+$('brand', this).text()+" "+$('model', this).text()+"</span></li>");
+				ul.append(li);
+			});
+			$("#remotes").append(ul);
+		});
+		</script>
+	</body>
+</html>

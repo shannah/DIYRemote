@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<remotes>
+	<remote>
+		<name>AVR3600</name>
+		<brand>Harman Kardon</brand>
+		<model>AVR 3600</model>
+		<author>Steve Hannah</author>
+		<description>Switches between Media Server (Apple TV), Game (XBox), Cable/Sat (Cassette Deck), and AUX (CD Player).  Uses images of components for the buttons to make it intuitive. </description>
+	</remote>
+</remotes>
