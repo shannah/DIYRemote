@@ -1,0 +1,11 @@
+*.jar
+private
+lib/impl
+build
+dist
+lib/CodenameOne_SRC.zip
+nbproject/build-impl.xml~
+Versions.properties
+.DS_Store
+!asciidoclet-1.5.7-SNAPSHOT-shaded.jar
+codenameone_settings.properties

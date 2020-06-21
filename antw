@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -f lib/CodenameOne.jar ] || [ ! -f lib/CLDC11.jar ] || [ ! -f lib/CodenameOne_SRC.zip ] || [ ! -f CodeNameOneBuildClient.jar ]
+then
+	bash setup.sh
+fi
+
+ant -Dplatforms.JDK_1.8.home=$JAVA_HOME -Dreference.CodenameOne.jar=lib/CodenameOne.jar "$@"
