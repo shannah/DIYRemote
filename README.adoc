@@ -34,7 +34,7 @@ NOTE: The DIYRemote app requires Android 4 or higher, so it will work on very ol
 [#installing-diy-remote]
 === Installing the DIY Remote App
 
-Download https://github.com/shannah/DIYRemote/bin/DIYRemote-debug.apk[DIYRemote.apk].
+Download https://github.com/shannah/DIYRemote/raw/master/bin/DIYRemote-debug.apk[DIYRemote.apk].
 
 NOTE: You'll need to allow installation from untrusted sources.
 
