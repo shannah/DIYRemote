@@ -87,7 +87,7 @@ public class DIYRemote {
         browser = new BrowserComponent();
         String url = Preferences.get("remote-url", null);
         if (url == null) {
-            url = "https://weblite.ca/remote.html";
+            url = "https://shannah.github.io/DIYRemote";
             Preferences.set("remote-url", url);
         }
         browser.setURL(url);
