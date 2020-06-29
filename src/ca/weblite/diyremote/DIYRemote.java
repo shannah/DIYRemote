@@ -21,6 +21,7 @@ import com.codename1.io.Util;
 import com.codename1.processing.Result;
 import com.codename1.ui.BrowserComponent;
 import com.codename1.ui.Button;
+import com.codename1.ui.CN;
 import static com.codename1.ui.ComponentSelector.$;
 import com.codename1.ui.Container;
 import com.codename1.ui.FontImage;
@@ -65,17 +66,11 @@ public class DIYRemote {
             }
             Log.sendLogAsync();
             Dialog.show("Connection Error", "There was a networking error in the connection to " + err.getConnectionRequest().getUrl(), "OK", null);
-        });        
+        });
+        CN.setProperty("android.webContentsDebuggingEnabled", "true");
     }
     
-    private int[] toIntArray(List<Number> l) {
-        int len = l.size();
-        int[] out = new int[len];
-        for (int i=0; i<len; i++) {
-            out[i] = l.get(i).intValue();
-        }
-        return out;
-    }
+    
     
     public void start() {
         if(current != null){
