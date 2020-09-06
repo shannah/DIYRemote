@@ -31,3 +31,4 @@ codename1.packageName=ca.weblite.diyremote
 codename1.arg.android.release=false
 codename1.arg.android.xpermissions=<uses-permission android\:name\="android.permission.TRANSMIT_IR" android\:required\="false" /><uses-feature android\:name\="android.hardware.consumerir" />
 codename1.secondaryTitle=CodenameOne_Template
+codename1.arg.android.xapplication_attr=android\:usesCleartextTraffic\="true"

@@ -125,6 +125,7 @@ public class DIYRemote {
         
         settings.addActionListener(evt->{
             TextField urlField = new TextField();
+            urlField.setMaxSize(2048);
             $(urlField).selectAllStyles().setFontSizeMillimeters(2.5f);
             urlField.setText(browser.getURL());
             Button go = new Button("Go");
